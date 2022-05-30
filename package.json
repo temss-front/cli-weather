@@ -2,7 +2,7 @@
   "name": "cli-weather",
   "version": "1.0.0",
   "description": "",
-  "main": "weather.js.js",
+  "main": "weather.js",
   "bin": {
     "weather": "weather.js"
   },
