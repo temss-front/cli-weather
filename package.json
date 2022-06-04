@@ -1,7 +1,7 @@
 {
-  "name": "cli-weather",
+  "name": "one-city-weather",
   "version": "1.0.0",
-  "description": "",
+  "description": "Weather CLI for one city",
   "main": "weather.js",
   "bin": {
     "weather": "weather.js"

@@ -3,7 +3,8 @@ import { TOKEN_DICTIONARY } from "../constants.js";
 import axios from "axios";
 
 export const getWeather = async (city) => {
-  const token = await getKeyValue(TOKEN_DICTIONARY.TOKEN);
+  const token =
+    process.env.TOKEN ?? (await getKeyValue(TOKEN_DICTIONARY.TOKEN));
   if (!token) {
     throw new Error('Не задан ключ Api. Задайте его с помощью "-t [API-KEY]"');
   }
@@ -18,5 +19,5 @@ export const getWeather = async (city) => {
       },
     }
   );
-  console.log(data)
+  return data;
 };
